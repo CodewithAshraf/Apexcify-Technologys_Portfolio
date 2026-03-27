@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bangers&family=Bebas+Neue&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+   <nav id="navbar">
+
+    <ul class="sidebar" id="sidebar">
+
+
+
+    <li onclick="hidesidebar()">
+    <i class="fa-solid fa-xmark"></i>
+    </li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  <div class="logo">Ashraf.</div>
+        <ul class="nav-links">
+         
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <li class="menu-button" onclick="showsidebar()">
+      
+    <i class="fa-solid fa-bars"></i>
+        </li>
+
+    </ul>
+
+    </nav>
+   <section class="contact-section">
+  <div class="container">
+    
+    <h2>Get in touch</h2>
+    <p>Contact me for any Queries and Projects Thank You!</p>
+
+    <div class="form-card">
+      <form action="https://api.web3forms.com/submit" method="POST">
+
+  <!-- Correct Access Key -->
+  <input type="hidden" name="access_key" value="1871c7a0-3f8d-48d4-9f2c-4e8e3fc94675">
+
+  <div class="row">
+    <div class="input-group">
+      <label>First Name</label>
+      <input type="text" name="first_name" required>
+    </div>
+
+    <div class="input-group">
+      <label>Last Name</label>
+      <input type="text" name="last_name" required>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="input-group">
+      <label>Email</label>
+      <input type="email" name="email" required>
+    </div>
+
+    <div class="input-group">
+      <label>Phone No.</label>
+      <input type="text" name="phone" required>
+    </div>
+  </div>
+
+  <div class="input-group full">
+    <label>Message</label>
+    <textarea name="message" placeholder="Write your message..." required></textarea>
+  </div>
+
+  <button class="btn" type="submit">Send Message</button>
+
+</form>
+    </div>
+
+  </div>
+</section>  
+<script src="script.js"></script>
+</body>
+</html>

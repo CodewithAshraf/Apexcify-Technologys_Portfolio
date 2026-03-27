@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bangers&family=Bebas+Neue&family=Luckiest+Guy&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+
+<title>Portfolio</title>
+
+</head>
+
+<body>
+
+    <nav id="navbar">
+
+    <ul class="sidebar" id="sidebar">
+
+
+
+    <li onclick="hidesidebar()">
+    <i class="fa-solid fa-xmark"></i>
+    </li>
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  <div class="logo">Ashraf.</div>
+        <ul class="nav-links">
+         
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+
+    <li class="menu-button" onclick="showsidebar()">
+      
+    <i class="fa-solid fa-bars"></i>
+        </li>
+
+    </ul>
+
+    </nav>
+   <div class="hero" id="home">
+
+    <video autoplay loop muted src="video/hero-bg.mp4"></video>
+
+    <div class="overlay">
+        <h1>
+Hello I am Muhammad Ashraf <br>and I am
+<span class="typing"></span>
+</h1>
+    </div>
+
+</div>
+<div class="aboutcontainer" id="about">
+    <div class="imagearea">
+        <img src="images/Gemini_Generated_Image_mcjqnfmcjqnfmcjq (1).png" height="980" alt="">
+    </div>
+    <div class="content">
+        <h1>ABOUT MYSELF</h1>
+        <h4>I am a passionate Frontend Developer who loves creating modern, responsive, and user-friendly web experiences. With strong skills in HTML, CSS, and JavaScript, I focus on building clean interfaces that provide both functionality and great design. Alongside frontend development, I also work with backend technologies such as PHP and ASP.NET, allowing me to build complete full-stack web solutions. I have a solid foundation in MySQL database management and enjoy designing efficient data structures for scalable applications. In addition, my UI/UX design skills help me craft visually appealing and intuitive interfaces that enhance the overall user experience.</h4>
+    </div>
+</div>
+
+<section class="skills">
+    <h2>SKILLS</h2>
+
+    <div class="skills-container">
+        <div class="skill"><img src="images/php.png" alt=""></div>
+        <div class="skill"><img src="images/javascript.png" alt=""></div>
+        <div class="skill"><img src="images/c-sharp.png" alt=""></div>
+        <div class="skill"><img src="images/figma.png" alt=""></div>
+
+        <div class="skill"><img src="images/png-transparent-mysql-database-relational-database-sql-mysql-logo-database-management-3d-icon__1_-removebg-preview.png" alt=""></div>
+        <div class="skill"><img src="images/html.png" alt=""></div>
+        <div class="skill"><img src="images/css.png" alt=""></div>
+        <div class="skill"><img src="images/bootstrap-framework-logo.png" alt=""></div>
+    </div>
+</section>
+<section class="projects" id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-container">
+
+    <!-- FIRST CARD -->
+    <div class="card">
+      <img src="images/Screenshot 2025-10-09 164724.png" alt="">
+      <div class="card-content">
+        <h3>Lawyer Management System</h3>
+        <p>Full PHP-based Lawyer Management System</p>
+        <button onclick="openGallery()">View</button>
+      </div>
+    </div>
+
+    <!-- CARD -->
+    <div class="card">
+      <img src="images/Screenshot 2026-03-23 163238.png" height="40px" width="30" alt="">
+      <div class="card-content">
+        <h3>Stepzy</h3>
+        <p>Responsive calculator built with JavaScript.</p>
+        <a href="https://step-zy.netlify.app/" target="_blank">
+          <button>View</button>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/Screenshot 2026-03-23 163718.png" alt="">
+      <div class="card-content">
+        <h3>To Do List</h3>
+        <p>Responsive calculator built with JavaScript.</p>
+        <a href="https://mytodolistapp-1.netlify.app/" target="_blank">
+          <button>View</button>
+        </a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/Screenshot 2026-03-23 163439.png" alt="">
+      <div class="card-content">
+        <h3>Calculator App</h3>
+        <p>Responsive calculator built with JavaScript.</p>
+        <a href="https://calculator-myapp1.netlify.app/" target="_blank">
+          <button>View</button>
+        </a>
+      </div>
+    </div>
+    
+
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="galleryModal" class="modal">
+  <span onclick="closeGallery()" class="close">&times;</span>
+
+  <div class="slider">
+    <img id="sliderImage" src="/images/Screenshot 2025-10-09 164724.png">
+
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <h2 class="logos">Muhammad Ashraf</h2>
+
+    <ul class="footer-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#projects">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+     
+    </ul>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/muhammad-ashraf-645056261/"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/CodewithAshraf"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.youtube.com/@doctordev88"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <!-- <p class="copyright">
+      Copyright ©2024 All rights reserved | Made with ❤ by You
+    </p> -->
+
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
