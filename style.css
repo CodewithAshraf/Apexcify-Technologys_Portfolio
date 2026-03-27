@@ -476,7 +476,7 @@ background: url("images/bright-blue-lines-dark-background.jpg") no-repeat center
   background: #00184c; /* blue background */
   padding: 80px 20px;
   text-align: center;
-  height: 100vh;
+  height: 800px;
 }
 
 .contact-section h2 {
@@ -491,6 +491,7 @@ background: url("images/bright-blue-lines-dark-background.jpg") no-repeat center
 }
 
 .container {
+  height: 100vh;
   max-width: 900px;
   margin: auto;
 }
